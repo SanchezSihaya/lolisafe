@@ -1,0 +1,52 @@
+{
+  "name": "lolisafe",
+  "version": "3.0.0",
+  "description": "Blazing fast file uploader and awesome bunker written in node! 🚀",
+  "author": "Pitu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WeebDev/lolisafe"
+  },
+  "bugs": {
+    "url": "https://github.com/WeebDev/loli-safe/issues"
+  },
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-rate-limit": "^2.6.0",
+    "fluent-ffmpeg": "^2.1.0",
+    "gm": "^1.23.0",
+    "helmet": "^3.5.0",
+    "jszip": "^3.1.4",
+    "knex": "^0.12.6",
+    "multer": "^1.2.1",
+    "multer-sftp": "^0.2.0",
+    "randomstring": "^1.1.5",
+    "request": "^2.83.0",
+    "sftp-upload": "^1.0.0",
+    "sqlite3": "^3.1.13",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.4.1",
+    "eslint-config-aqua": "^1.4.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "aqua"
+    ],
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "rules": {
+      "func-names": 0
+    }
+  }
+}
