@@ -25,19 +25,19 @@ module.exports = {
 		Which one you use is ultimately up to you.
 	*/
 	serveFilesWithNode: true,
-	domain: 'https://i.liich.me',
+	domain: '<domain name>',
 
 	// Port on which to run the server
-	port: 4231,
+	port: <app port>,
 
 	// Pages to process for the frontend
-	pages: ['home', 'register', 'dashboard', 'mobile', 'memeboard'],
+	pages: ['home', 'register', 'dashboard', 'mobile'],
 
 	// Add file extensions here which should be blocked
 	blockedExtensions: [
-	    '.scss',
+	        '.scss',
 		'.css',
-	    '.php',
+	        '.php',
 		'.html',
 		'.js',
 		'.exe',
