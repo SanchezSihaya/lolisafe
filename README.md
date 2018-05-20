@@ -7,7 +7,7 @@
 ## What's new in v3.0.0
 - Backend rewrite to make it faster, better and easier to extend
 - Album downloads (Thanks to [PascalTemel](https://github.com/PascalTemel))
-- See releases for changelog
+- See releases for changelo
 
 If you're upgrading from a version prior to v3.0.0 make sure to run **ONCE** `node database/migration.js` to create the missing columns on the database.
 
