@@ -1,93 +1,70 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta name="description" content="A pomf-like file uploading service that doesn't suck.">
-		<meta name="keywords" content="upload,lolisafe,file,images,hosting">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+
+        <meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta property="og:title" content="Liich.me | Login">
+		<meta name="description" content="another lolisafe clone.">
+		<meta property="og:image" content="https://i.liich.me/Ltc7xh.png">
+        <meta name="keywords" content="liich.me, file upload, file host, weeb">
+        <meta name="author" content="Lichna">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 
-		<link rel="apple-touch-icon" sizes="180x180" href="https://lolisafe.moe/images/icons/apple-touch-icon.png?v=XBreOJMe24">
-		<link rel="icon" type="image/png" href="https://lolisafe.moe/images/icons/favicon-32x32.png?v=XBreOJMe24" sizes="32x32">
-		<link rel="icon" type="image/png" href="https://lolisafe.moe/images/icons/favicon-16x16.png?v=XBreOJMe24" sizes="16x16">
-		<link rel="manifest" href="https://lolisafe.moe/images/icons/manifest.json?v=XBreOJMe24">
-		<link rel="mask-icon" href="https://lolisafe.moe/images/icons/safari-pinned-tab.svg?v=XBreOJMe24" color="#5bbad5">
-		<link rel="shortcut icon" href="https://lolisafe.moe/images/icons/favicon.ico?v=XBreOJMe24">
-		<meta name="apple-mobile-web-app-title" content="lolisafe">
-		<meta name="application-name" content="lolisafe">
-		<meta name="msapplication-config" content="https://lolisafe.moe/images/icons/browserconfig.xml?v=XBreOJMe24">
-		<meta name="theme-color" content="#ffffff">
+    <title>Liich.me | Login</title>
+	<link rel="shortcut icon" type="image/x-icon" href="https://i.liich.me/images/icons/icon.jpg"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+	<link rel="stylesheet" href="https://i.liich.me/css/home.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
 
-		<meta property="og:url" content="https://lolisafe.moe" />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="lolisafe.moe | A small safe worth protecting." />
-		<meta property="og:description" content="A pomf-like file uploading service that doesn't suck." />
-		<meta property="og:image" content="http://lolisafe.moe/images/logo_square.png" />
-		<meta property="og:image:secure_url" content="https://lolisafe.moe/images/logo_square.png" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js"></script>
+	<script type="text/javascript" src="https://i.liich.me/js/auth.js"></script>
 
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:title" content="lolisafe.moe | A small safe worth protecting.">
-		<meta name="twitter:description" content="A pomf-like file uploading service that doesn't suck.">
-		<meta name="twitter:image" content="https://lolisafe.moe/files/images/logo_square.png">
-		<meta name="twitter:image:src" content="https://lolisafe.moe/images/logo_square.png">
+</head>
 
-		<title>lolisafe - A small safe worth protecting.</title>
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.0/css/bulma.min.css">
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
-		<link rel="stylesheet" type="text/css" href="/css/style.css">
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js"></script>
-		<script type="text/javascript" src="/js/home.js"></script>
-	</head>
+ <body>
+    <a target="_blank" href="https://github.com/WeebDev/lolisafe" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:transparent; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style> 
+ 
+  <section>
+	<div id="loglewdbox" class="container" style="display:block;">
+	    <div class="wrapper">
+              
+		        <h1><a href="https://liich.me">Liich.me</a></h1>
+				<p>Maximum upload size 20MB</p>
+                <hr>
+				
+		        <h3>Login</h3>
+				<div class="column">
 
-	<body>
-		<section class="hero is-fullheight has-text-centered" id="home">
-			<div class="hero-body">
-				<div class="container">
-					<p id="b">
-						<img class="logo" src="/images/logo_smol.png">
-					</p>
-					<h1 class="title">lolisafe</h1>
-					<h2 class="subtitle">A <strong>modern</strong> self-hosted file upload service</h2>
 
-					<h3 class="subtitle" id="maxFileSize"></h3>
-					<div class="columns">
-						<div class="column is-hidden-mobile"></div>
-						<div class="column" id="uploadContainer">
-							<a id="loginToUpload" href="/auth" class="button is-danger">Running in private mode. Log in to upload.</a>
-							<div class="field" id="albumDiv" style="display: none">
-								<p class="control select-wrapper">
-									<span class="select">
-										<select id="albumSelect">
-											<option value="">Upload to album</option>
-										</select>
-									</span>
-								</p>
-							</div>
-						</div>
-						<div class="column is-hidden-mobile"></div>
-					</div>
+				<label>Username:<sup>*</sup></label>
+				<p class="control">
+				 <input id='user' class="form-control" type="text" placeholder="Your username">
+				</p>
 
-					<div id="uploads">
-						<div id="template" class="columns">
-							<div class="column is-hidden-mobile"></div>
-							<div class="column">
-								<progress class="progress is-small is-danger" value="0" max="100" data-dz-uploadprogress></progress>
-								<p data-dz-errormessage></p>
-								<p class="link"></p>
-							</div>
-							<div class="column is-hidden-mobile"></div>
-						</div>
-					</div>
 
-					<h3 class="subtitle"><a href="/auth" id="loginLinkText"></a></h3>
-					<h3 id="links">
-						<a href="https://github.com/WeebDev/lolisafe" target="_blank" class="is-danger">View on GitHub</a><span>|</span><a id="ShareX" href="https://lolisafe.moe/sharex.txt">ShareX</a><span>|</span><a href="https://chrome.google.com/webstore/detail/lolisafe-uploader/enkkmplljfjppcdaancckgilmgoiofnj" target="_blank" class="is-danger">Chrome extension</a><span>|</span><a href="/faq" class="is-danger">FAQ</a><span>|</span><a href="/auth" target="_blank" class="is-danger">Dashboard</a>
-					</h3>
+				<label>Password:<sup>*</sup></label>
+				<p class="control">
+				 <input id='pass' class="form-control" type="password" placeholder="Your password">
+				</p>
 
+
+				<p class="control has-addons is-pulled-right">
+				<input type="button" class="btn btn-primary" value="Login" id="loginBtn" onclick="page.do('login')">
+				</p>
+
+
+				<p>Don't have an account? <a id="bottomlink" href="/register">Sign up now</a></p>
 				</div>
-			</div>
-		</section>
-
-	</body>
+				
+                <p class="subtitle">Powered by lolisafe</p>
+			<div class="column is-hidden-mobile"></div>
+			<div class="column is-hidden-mobile"></div>
+		</div>
+	</div>
+  </section>
+ </body>
 </html>
