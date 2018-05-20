@@ -2,14 +2,10 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/kanadeko/Kuro/master/LICENSE)
 [![Chat / Support](https://img.shields.io/badge/Chat%20%2F%20Support-discord-7289DA.svg?style=flat-square)](https://discord.gg/5g6vgwn)
 
+# Lolisafe Fork for https://i.liich.me
+
 # lolisafe, a small safe worth protecting.
 
-## What's new in v3.0.0
-- Backend rewrite to make it faster, better and easier to extend
-- Album downloads (Thanks to [PascalTemel](https://github.com/PascalTemel))
-- See releases for changelo
-
-If you're upgrading from a version prior to v3.0.0 make sure to run **ONCE** `node database/migration.js` to create the missing columns on the database.
 
 ## Running
 1. Ensure you have at least version 7.6.0 of node installed
@@ -65,6 +61,7 @@ Because of how nodejs apps work, if you want it attached to a domain name you wi
 - [safe.fiery.me](https://safe.fiery.me): Just another clone.
 - [kayo.pics](https://kayo.pics): File hosting for all~
 - [dmca.gripe](https://dmca.gripe): a dmca-resistant, permanent file hosting service.
+- [i.liich.me](https://i.liich.me): another shitty clone.
 - Feel free to add yours here.
 
 ## Author
