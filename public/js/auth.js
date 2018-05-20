@@ -8,11 +8,11 @@ page.do = function(dest){
 	if(user === undefined || user === null || user === '')
 		return swal('Error', 'You need to specify a username', 'error');
 	if(pass === undefined || pass === null || pass === '')
-		return swal('Error', 'You need to specify a username', 'error');
+		return swal('Error', 'You need to specify a password', 'error');
 
 	axios.post('/api/' + dest, {
 		username: user,
-		password: pass
+		password: pass,
 	})
 	.then(function (response) {
 
@@ -24,10 +24,10 @@ page.do = function(dest){
 
 	})
 	.catch(function (error) {
-		return swal('An error ocurred', 'There was an error with the request, please check the console for more information.', 'error');
+		return swal('An error ocurred',  'auth.js - page.do', 'error');
 		console.log(error);
 	});
-};
+}
 
 page.verify = function(){
 	page.token = localStorage.token;
@@ -45,12 +45,13 @@ page.verify = function(){
 
 	})
 	.catch(function (error) {
-		return swal('An error ocurred', 'There was an error with the request, please check the console for more information.', 'error');
+		return swal('An error ocurred', 'auth.js - page.verify', 'error');
 		console.log(error);
 	});
 
-};
+}
 
 window.onload = function () {
 	page.verify();
-};
+
+}

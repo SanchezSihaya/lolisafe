@@ -1,0 +1,73 @@
+/* ------------------
+	PANEL BBC
+------------------ */
+html {
+background-color: #151513;
+}
+.section {
+background-color: #151513;
+}
+a {
+color: #fff;
+cursor: pointer;
+text-decoration: none;
+-webkit-transition: none 86ms ease-out;
+transition: none 86ms ease-out;
+}
+.button.is-danger.is-outlined {
+ border-color: #FFF;
+ color: #FFF;
+}
+.menu-list a:hover {
+ color: #151513;
+}
+.menu-list a.is-active {
+ background-color: #FFF;
+ color: #000;
+}
+.select-wrapper {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.button.is-danger.is-outlined:focus, .button.is-danger.is-outlined:hover, .button.is-danger:active, .button.is-primary.is-outlined:focus, .button.is-primary.is-outlined:hover, .button.is-primary:hover, .button.is-primary:active {
+ background: #FFF;
+ border-color: #FFF;
+ color: #000;
+}
+.button.is-primary.is-outlined, .button.is-primary {
+ background: #000;
+ border-color: #FFF;
+ color: #FFF;
+}
+section#dashboard .table { font-size: 12px }
+section#dashboard div#table div.column { display:flex; width: 200px; height: 200px; margin: 9px; background: #transparent; overflow: hidden; align-items: center; }
+section#dashboard div#table div.column a { width: 100%; }
+section#dashboard div#table div.column a img { width:200px; }
+.table td, .table th, a:hover, strong, table th {
+color: #FFF
+}
+.title, .subtitle, .menu-label, .menu-list a {
+color: #FFF;
+}
+.label {
+    color: #FFF;
+}
+.table, .table.is-striped tbody tr:nth-child(even){
+background-color: #151513;
+color: #FFF;
+}
+.table tr:hover, .table.is-striped tbody tr:nth-child(even):hover {
+background-color: #151513;
+color: #151513;
+}
+.pagination-link, .pagination-next, .pagination-previous {
+border: 1px solid #FFF;
+}
+.pagination-link:hover, .pagination-next:hover, .pagination-previous:hover {
+border: 1px solid #FFF;
+background-color: #FFF;
+color: #000;
+}
+.input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused, .textarea:active, .textarea:focus {
+border-color: #FFF
+}
